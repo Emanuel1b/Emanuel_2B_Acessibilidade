@@ -1,0 +1,78 @@
+:root {
+  --fonte-principal: 'Arial', sans-serif;
+  --cor-fundo: #f5fff5;
+  --cor-texto: #2c3e50;
+  --cor-primaria: #2ecc71;
+  --cor-link: #27ae60;
+  --cor-contraste-fundo: #000;
+  --cor-contraste-texto: #0f0;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  padding: 15px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-link);
+  font-weight: bold;
+}
+
+nav a:focus,
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Modo contraste alto */
+body.contraste {
+  background-color: var(--cor-contraste-fundo);
+  color: var(--cor-contraste-texto);
+}
+
+body.contraste a {
+  color: #ff0;
+}
